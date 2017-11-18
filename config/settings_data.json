@@ -51,8 +51,8 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "",
-          "logo_max_width": "100",
+          "logo": "shopify:\/\/shop_images\/logo-black.png",
+          "logo_max_width": "50",
           "main_linklist": "main-menu",
           "message": false,
           "home_page_only": true,
@@ -65,7 +65,7 @@
       "hero": {
         "type": "hero",
         "settings": {
-          "image": "",
+          "image": "shopify:\/\/shop_images\/hero_background-laptop.jpg",
           "alignment": "center",
           "title": "Image with text overlay",
           "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
@@ -140,21 +140,13 @@
           "footer_newsletter_enable": false,
           "show_payment_icons": false
         }
-      },
-      "some-text": {
-        "type": "text",
-        "settings": {
-          "text-box": "Hello",
-          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review!<\/p>"
-        }
       }
     },
     "content_for_index": [
       "hero",
       "featured-collections",
       "feature-row",
-      "slideshow",
-      "some-text"
+      "slideshow"
     ]
   },
   "presets": {
