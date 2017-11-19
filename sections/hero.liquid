@@ -26,14 +26,18 @@
     </div>
     <div class="hero__body">
       <div class="row">
-        <div class="offset-6 offset-sm-0 col-6 col-sm-5">
-          {% if section.settings.text != blank %}
-            <div class="rte-setting lead">{{ section.settings.text }}</div>
-          {% endif %}
+        <div class="hero__content-container offset-4 offset-sm-0 col-8 col-sm-5 text-right text-sm-left">
+          <div class="hero__content">
+            {% if section.settings.text != blank %}
+              <div class="rte-setting lead">
+              <p class="balance-text">{{ section.settings.text }}</p>
+              </div>
+            {% endif %}
 
-          {% if section.settings.button_link != blank %}
-            {% include 'pre-order-cta', href: section.settings.button_link, line1: "PRE-ORDER", line2: "NOW" %}
-          {% endif %}
+            {% if section.settings.button_link != blank %}
+              {% include 'pre-order-cta', href: section.settings.button_link, line1: "PRE-ORDER", line2: "NOW" %}
+            {% endif %}
+          </div>
         </div>
 
         <div class="w-100 d-block d-sm-none"></div>
@@ -73,10 +77,10 @@
         "default": 700
       },
       {
-        "type": "richtext",
+        "type": "text",
         "id": "text",
         "label": "Text",
-        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+        "default": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story."
       },
       {
         "type": "select",

@@ -16,7 +16,7 @@ assets/logo-black.svg:
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/my-theme.scss.liquid:
-  development: 2017-11-19T21:48:35+02:00   1ffee8306a2c62f73af422324c753acb
+  development: 2017-11-19T23:08:22+02:00   6fb9e3a1f4e5499e9cd6aa7a7f7f4b79
 assets/password.js:
   development: 2017-11-15T10:45:56+02:00   d826da9cb223a44d53a0c34f457e92dc
 assets/revolt-horizontal.svg:
@@ -26,7 +26,7 @@ assets/revolt-vertical.svg:
 assets/theme.js:
   development: 2017-11-15T10:45:56+02:00   b762f5a064c773b56dfce88c09349089
 assets/theme.scss.liquid:
-  development: 2017-11-18T13:26:40+02:00   de6d07fd82b754d0cd88588d1e1ad8ae
+  development: 2017-11-19T22:20:56+02:00   0da40fdb4a7408197d89e65fa5f9892f
 assets/vendor.js:
   development: 2017-11-15T10:45:57+02:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
@@ -38,7 +38,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2017-11-15T10:45:57+02:00   6351674ea67c53e01643a5bea02f7d0a
 layout/theme.liquid:
-  development: 2017-11-19T12:28:22+02:00   4ff13d9505433708b0d894d17dd8c7c7
+  development: 2017-11-19T22:58:54+02:00   de95e847ce5e3b425b2a33f3d63dd220
 locales/de.json:
   development: 2017-11-15T23:50:07+02:00   b7cd7749b0a0d9df967227ee73bcbb7f
 locales/en.default.json:
@@ -82,7 +82,7 @@ sections/footer.liquid:
 sections/header.liquid:
   development: 2017-11-15T10:45:55+02:00   bbef6b2a58734e1b7b67c6c3ce076185
 sections/hero.liquid:
-  development: 2017-11-19T21:36:59+02:00   b87da581a939307b4583cdeb9e726524
+  development: 2017-11-19T23:08:41+02:00   b1a8648aa83f885a698a69e659fc46a1
 sections/image-bar.liquid:
   development: 2017-11-15T10:45:55+02:00   aa3e620e7da9659ad6c8a55ca2e596a8
 sections/list-collections-template.liquid:

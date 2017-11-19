@@ -1,8 +1,8 @@
 /// Breakpoints --------
-$mobile:  376px;
-$tablet:  769px;
-$desktop: 1025px;
-$wide:    1441px;
+$sm:  576px;
+$md:  768px;
+$lg: 992px;
+$wide:    1440px;
 /// --------------------
 
 
@@ -18,7 +18,8 @@ $white: #fff;
 .hero__revolt-logo {
   width: 100%;
   margin-bottom: 1rem;
-  @media (min-width: $mobile) {
+  @media (min-width: $md) {
+    margin: auto;
     margin-bottom: 0;
     width: 63vw;
   }
@@ -27,26 +28,37 @@ $white: #fff;
 .hero__body {
   padding-left: 22px;
   padding-right: 22px;
-  @media (min-width: $mobile) {
+  @media (min-width: $sm) {
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+  .hero__content-container {
+    @media (min-width: $sm) {
+      display: flex;
+      justify-content: flex-end;
+
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
 
 .hero__featured_product_image {
   transform: scale(2) translate(25%, -15%);
-  @media (min-width: $mobile) {
-    transform: scale(1.4);
+  @media (min-width: $sm) {
+    max-width: 500px;
+    transform: scale(1.3) translate(0, -8%);
   }
 }
 
 .pre-order-cta {
   width: 8rem;
   font-size: 1rem;
-  @media (min-width: $mobile) {
+  @media (min-width: $sm) {
     width: 13rem;
     font-size: 1.7rem;
-    transform: scale(1.4);
   }
 
   border-radius: 2.5rem;
@@ -56,8 +68,7 @@ $white: #fff;
   padding: 0.2rem;
   color: $white;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
 
   .pre-order-cta__line1 {
     font-size: 1em;
