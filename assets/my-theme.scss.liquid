@@ -1,0 +1,79 @@
+/// Breakpoints --------
+$mobile:  376px;
+$tablet:  769px;
+$desktop: 1025px;
+$wide:    1441px;
+/// --------------------
+
+
+
+$red: #e94a3d;
+$white: #fff;
+
+.hero__inner p {
+  color: $white;
+  font-weight: normal;
+}
+
+.hero__revolt-logo {
+  width: 100%;
+  margin-bottom: 1rem;
+  @media (min-width: $mobile) {
+    margin-bottom: 0;
+    width: 63vw;
+  }
+}
+
+.hero__body {
+  padding-left: 22px;
+  padding-right: 22px;
+  @media (min-width: $mobile) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+.hero__featured_product_image {
+  transform: scale(2) translate(25%, -15%);
+  @media (min-width: $mobile) {
+    transform: scale(1.4);
+  }
+}
+
+.pre-order-cta {
+  width: 8rem;
+  font-size: 1rem;
+  @media (min-width: $mobile) {
+    width: 13rem;
+    font-size: 1.7rem;
+    transform: scale(1.4);
+  }
+
+  border-radius: 2.5rem;
+
+  text-align: center;
+  background-color: $red;
+  padding: 0.2rem;
+  color: $white;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+
+  .pre-order-cta__line1 {
+    font-size: 1em;
+    line-height: 0.8em;
+  }
+
+  .pre-order-cta__line2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}

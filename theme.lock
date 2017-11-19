@@ -15,8 +15,14 @@ assets/logo-black.svg:
   development: 2017-11-18T12:51:17+02:00   b25b3ca882c527d1f3ce930ceeec6f49
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
+assets/my-theme.scss.liquid:
+  development: 2017-11-19T21:48:35+02:00   1ffee8306a2c62f73af422324c753acb
 assets/password.js:
   development: 2017-11-15T10:45:56+02:00   d826da9cb223a44d53a0c34f457e92dc
+assets/revolt-horizontal.svg:
+  development: 2017-11-18T22:00:30+02:00   2021763b6c752ca3539cdbdf7f1df767
+assets/revolt-vertical.svg:
+  development: 2017-11-19T15:42:33+02:00   8df4d6dc8c46b3b2b0e0c2c4899e0c83
 assets/theme.js:
   development: 2017-11-15T10:45:56+02:00   b762f5a064c773b56dfce88c09349089
 assets/theme.scss.liquid:
@@ -32,7 +38,7 @@ layout/gift_card.liquid:
 layout/password.liquid:
   development: 2017-11-15T10:45:57+02:00   6351674ea67c53e01643a5bea02f7d0a
 layout/theme.liquid:
-  development: 2017-11-18T13:50:56+02:00   7c897863d0236c8e3c965df9f8cb5cb1
+  development: 2017-11-19T12:28:22+02:00   4ff13d9505433708b0d894d17dd8c7c7
 locales/de.json:
   development: 2017-11-15T23:50:07+02:00   b7cd7749b0a0d9df967227ee73bcbb7f
 locales/en.default.json:
@@ -76,7 +82,7 @@ sections/footer.liquid:
 sections/header.liquid:
   development: 2017-11-15T10:45:55+02:00   bbef6b2a58734e1b7b67c6c3ce076185
 sections/hero.liquid:
-  development: 2017-11-15T10:45:55+02:00   d45cf37312b64d6e7511bdba56256758
+  development: 2017-11-19T21:36:59+02:00   b87da581a939307b4583cdeb9e726524
 sections/image-bar.liquid:
   development: 2017-11-15T10:45:55+02:00   aa3e620e7da9659ad6c8a55ca2e596a8
 sections/list-collections-template.liquid:
@@ -215,6 +221,8 @@ snippets/no-blocks.liquid:
   development: 2017-11-15T10:45:59+02:00   0cb7d758b6df0feb07ae5804b4b627fa
 snippets/pagination.liquid:
   development: 2017-11-15T10:45:59+02:00   21eb22fbf93da5d96f2d111ce4784463
+snippets/pre-order-cta.liquid:
+  development: 2017-11-18T22:48:55+02:00   2984958c8a9ab9c6b6c88e492b368fb9
 snippets/product-card-grid.liquid:
   development: 2017-11-15T10:45:59+02:00   4688cc4ff89f19be4a58919fb7a3a8fe
 snippets/product-card-list.liquid:

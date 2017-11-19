@@ -32,7 +32,10 @@
 
   {% include 'social-meta-tags' %}
 
+  {{ 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' | stylesheet_tag }}
+  {{ '//cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.0/balancetext.min.js' | script_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'my-theme.scss.css' | asset_url | stylesheet_tag }}
   {% include 'google-fonts' %}
 
   <script>
