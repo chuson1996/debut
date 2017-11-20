@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{ section.settings.brand_description }}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Brand Mission",
+  "settings": [{
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+  }, {
+    "type": "richtext",
+    "id": "brand_description",
+    "label": "Brand mission (description)",
+    "default": "<p>Write some description for your brand here.</p>"
+  }]
+}
+{% endschema %}

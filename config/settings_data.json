@@ -1,7 +1,7 @@
 {
   "current": {
     "color_text": "#3d4246",
-    "color_body_text": "#788188",
+    "color_body_text": "#000",
     "color_sale_text": "#7796a8",
     "color_borders": "#e8e9eb",
     "color_button": "#7796a8",
@@ -66,14 +66,17 @@
         "type": "hero",
         "settings": {
           "image": "shopify:\/\/shop_images\/hero_background-laptop.jpg",
-          "alignment": "center",
-          "title": "Image with text overlay",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+          "featured_product_image": "shopify:\/\/shop_images\/Wow_Right_Shoe_Outer.png",
+          "featured_product_image_size": 1000,
+          "text": "Revolt is the world first sneakers for millennial from recycled materials.",
           "hero_size": "medium",
-          "text_size": "large",
-          "button_label": "",
-          "button_link": ""
+          "text_size": "medium",
+          "button_link": "shopify:\/\/collections\/all"
         }
+      },
+      "brand-mission": {
+        "type": "brand-mission",
+        "settings": {}
       },
       "slideshow": {
         "type": "slideshow",
@@ -144,6 +147,7 @@
     },
     "content_for_index": [
       "hero",
+      "brand-mission",
       "featured-collections",
       "feature-row",
       "slideshow"
@@ -152,7 +156,7 @@
   "presets": {
     "Default": {
       "color_text": "#3d4246",
-      "color_body_text": "#788188",
+      "color_body_text": "#000",
       "color_sale_text": "#7796A8",
       "color_borders": "#e8e9eb",
       "color_button": "#7796A8",
@@ -288,7 +292,6 @@
         "hero": {
           "type": "hero",
           "settings": {
-            "alignment": "center",
             "hero_size": "x-large",
             "text_size": "large"
           }
