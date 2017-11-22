@@ -1,0 +1,43 @@
+.hero__inner p {
+  color: $white;
+  font-weight: normal;
+}
+
+.hero__revolt-logo {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include mq($from: $md) {
+    margin: auto;
+    margin-bottom: 0;
+    width: 63vw;
+  }
+}
+
+.hero__body {
+  padding-left: 22px;
+  padding-right: 22px;
+  @include mq($from: $sm) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .hero__content-container {
+    @include mq($from: $sm) {
+      display: flex;
+      justify-content: flex-end;
+
+      .hero__content {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.hero__featured_product_image {
+  width: 100%;
+  transform: scale(2) translate(25%, -15%);
+  @include mq($from: $sm) {
+    max-width: 500px;
+    transform: scale(1.3) translate(0, -8%);
+  }
+}

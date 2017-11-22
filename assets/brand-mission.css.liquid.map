@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,gBAAgB,EAAE,OAAO",
+"sources": ["../sass/brand-mission.scss"],
+"names": [],
+"file": "brand-mission.css.liquid"
+}

@@ -1,0 +1,35 @@
+.pre-order-cta {
+  width: 8rem;
+  font-size: 1rem;
+  @include mq($from: $sm) {
+    width: 13rem;
+    font-size: 1.7rem;
+  }
+
+  border-radius: 2.5rem;
+
+  text-align: center;
+  background-color: $red;
+  padding: 0.2rem;
+  color: $white;
+  font-weight: 700;
+  display: inline-block;
+
+  .pre-order-cta__line1 {
+    font-size: 1em;
+    line-height: 0.8em;
+  }
+
+  .pre-order-cta__line2 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+}
