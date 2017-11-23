@@ -1,5 +1,29 @@
 .brand-mission {
-  background-color: #01447d; }
+  position: relative;
+  background-color: #01447d;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 5rem; }
+  .brand-mission p {
+    color: #fff; }
+  @media (min-width: 48em) {
+    .brand-mission {
+      padding-bottom: 3rem; } }
+  .brand-mission::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    bottom: 2rem;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 0.5rem; }
+    @media (min-width: 48em) {
+      .brand-mission::before {
+        top: 3rem;
+        left: 5vw;
+        width: 0.5rem;
+        height: calc(100% - 6rem); } }
 
 .hero__inner p {
   color: #fff;

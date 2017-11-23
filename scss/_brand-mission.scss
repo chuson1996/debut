@@ -1,3 +1,35 @@
+$brand-mission-container-vertical-padding: 3rem;
+
 .brand-mission {
-  background-color: #01447d;
+  position: relative;
+  background-color: $blue;
+  color: $white;
+  p {
+    color: $white;
+  }
+
+  padding-top: $brand-mission-container-vertical-padding;
+  padding-bottom: #{$brand-mission-container-vertical-padding + 2rem};
+  @include mq($from: $md) {
+    padding-bottom: $brand-mission-container-vertical-padding;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $white;
+
+    bottom: 2rem;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 0.5rem;
+
+    @include mq($from: $md) {
+      top: $brand-mission-container-vertical-padding;
+      left: 5vw;
+      width: 0.5rem;
+      height: calc(100% - #{$brand-mission-container-vertical-padding * 2});
+    }
+  }
 }

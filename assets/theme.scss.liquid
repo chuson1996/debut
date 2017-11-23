@@ -352,7 +352,7 @@ $width-site: 1200px;
 $gutter-site: 55px;
 $gutter-site-mobile: 22px;
 $section-spacing: 55px;
-$section-spacing-small: 35px;
+$section-spacing-small: 0;
 $border-radius: 2px;
 
 /*================ Z-Index ================*/
@@ -1422,14 +1422,9 @@ h6 {
 /*================ Paragraph styles ================*/
 p {
   color: $color-body-text;
-  margin: 0 0 ($section-spacing-small / 1.8);
 
   @include media-query($small) {
     font-size: em($font-size-base - 1);
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
