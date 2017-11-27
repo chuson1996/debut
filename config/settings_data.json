@@ -1,10 +1,10 @@
 {
   "current": {
-    "color_text": "#3d4246",
+    "color_text": "#000000",
     "color_body_text": "#000",
     "color_sale_text": "#7796a8",
     "color_borders": "#e8e9eb",
-    "color_button": "#7796a8",
+    "color_button": "#e94a3d",
     "color_button_text": "#fff",
     "color_small_button": "#fff",
     "color_small_button_text": "#3d4246",
@@ -74,12 +74,9 @@
           "button_link": "shopify:\/\/collections\/all"
         }
       },
-      "brand-mission": {
-        "type": "brand-mission",
-        "settings": {}
-      },
       "slideshow": {
         "type": "slideshow",
+        "disabled": true,
         "blocks": {
           "slideshow-0": {
             "type": "image",
@@ -126,6 +123,7 @@
       },
       "feature-row": {
         "type": "feature-row",
+        "disabled": true,
         "settings": {
           "image": "",
           "layout": "left",
@@ -140,8 +138,91 @@
         "settings": {
           "footer_linklist": "footer",
           "footer_linklist_two": "",
-          "footer_newsletter_enable": false,
+          "footer_newsletter_enable": true,
           "show_payment_icons": false
+        }
+      },
+      "brand-mission": {
+        "type": "brand-mission",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/womens-athletic-leggings.jpg",
+          "brand_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae risus pulvinar, faucibus est vitae, vestibulum lacus. Nam sapien nibh, rutrum quis aliquam ut, tempor vel tellus. Mauris egestas, tellus accumsan commodo viverra, mauris nisl volutpat augue, a placerat arcu neque non enim. Phasellus molestie venenatis posuere. Vivamus hendrerit nisi non urna hendrerit, a feugiat lacus commodo. Ut egestas pharetra elit ut eleifend. Integer nec quam diam.<\/p>\n<p>Quisque bibendum pulvinar augue sed vehicula. Cras in augue mi. Duis commodo tortor ac massa posuere venenatis. Sed elementum molestie massa ut finibus. Aliquam vel fermentum dui, sit amet tincidunt ex. Curabitur in posuere sapien, in consequat ipsum. Suspendisse lacinia sollicitudin tortor, eget gravida elit dictum b.<\/p>"
+        }
+      },
+      "revolt-team": {
+        "type": "revolt-team",
+        "blocks": {
+          "1511611548107": {
+            "type": "member",
+            "settings": {
+              "name": "Yu Chao",
+              "nickname": "Hand of the brand",
+              "role": "Visual Designer"
+            }
+          },
+          "1511612406733": {
+            "type": "member",
+            "settings": {
+              "name": "Jesse Tran",
+              "nickname": "Shoe Dog",
+              "role": "Serial Entrepreneur"
+            }
+          },
+          "1511614329428": {
+            "type": "member",
+            "settings": {
+              "name": "Son Chu",
+              "nickname": "SoMe Warrior",
+              "role": "Digital Marketer"
+            }
+          },
+          "1511615028207": {
+            "type": "advisor",
+            "settings": {
+              "name": "Henrik Tuomas",
+              "nickname": "",
+              "role": "Production Advisor"
+            }
+          },
+          "1511615078602": {
+            "type": "advisor",
+            "settings": {
+              "name": "Kalle Freese",
+              "nickname": "",
+              "role": "Branding Advisor"
+            }
+          },
+          "1511615179988": {
+            "type": "advisor",
+            "settings": {
+              "name": "Johannas Savolainen",
+              "nickname": "",
+              "role": "Art & Business Advisor"
+            }
+          }
+        },
+        "block_order": [
+          "1511611548107",
+          "1511612406733",
+          "1511614329428",
+          "1511615028207",
+          "1511615078602",
+          "1511615179988"
+        ],
+        "settings": {
+          "team_image": "shopify:\/\/shop_images\/team-photo.jpg",
+          "underlayer_image": "shopify:\/\/shop_images\/grey-wall.jpg"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "image_size": "large",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": true
         }
       }
     },
@@ -150,7 +231,8 @@
       "brand-mission",
       "featured-collections",
       "feature-row",
-      "slideshow"
+      "slideshow",
+      "revolt-team"
     ]
   },
   "presets": {

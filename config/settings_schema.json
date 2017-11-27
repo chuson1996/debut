@@ -18,13 +18,13 @@
         "type": "color",
         "id": "color_text",
         "label": "Headings and links",
-        "default": "#3d4246"
+        "default": "#000"
       },
       {
         "type": "color",
         "id": "color_body_text",
         "label": "Body text",
-        "default": "#788188"
+        "default": "#000"
       },
       {
         "type": "color",

@@ -1,5 +1,9 @@
+{% comment %}
+  Usage:
+  {% include 'pre-order-cta', href: section.settings.button_link, line1: "PRE-ORDER", line2: "NOW" %}
+{% endcomment %}
+
 <a href="{{ href }}" class="pre-order-cta">
   <div class="pre-order-cta__line1">{{ line1 }}</div>
   <div class="pre-order-cta__line2">{{ line2 }}</div>
 </a>
-

@@ -16,9 +16,9 @@
 {% endif %}
 
 <footer class="site-footer" role="contentinfo">
-  <div class="page-width">
-    <div class="grid grid--no-gutters">
-      <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+  <div class="container">
+    <div class="row row--no-gutters">
+      <div class="col{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} col-md-4{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} col-md-6{% else %} text-center{% endif %}">
         {%- assign footer_linklist = section.settings.footer_linklist -%}
         {% if linklists[footer_linklist].links.size > 0 %}
           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
@@ -31,7 +31,7 @@
         {% endif %}
       </div>
 
-      <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+      <div class="col{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist != blank %} col-md-3{% elsif section.settings.footer_linklist == blank and section.settings.footer_newsletter_enable %} col-md-6{% else %} text-center{% endif %}">
         {%- assign footer_linklist_two = section.settings.footer_linklist_two -%}
         {% if linklists[footer_linklist_two].links.size > 0 %}
           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
@@ -45,14 +45,14 @@
       </div>
 
       {% if section.settings.footer_newsletter_enable %}
-        <div class="grid__item medium-up--one-half">
+        <div class="col">
           <div class="site-footer__newsletter">
             {% form 'customer' %}
               {{ form.errors | default_errors }}
               {% if form.posted_successfully? %}
                 <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
               {% else %}
-                <label for="Email" class="h4">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+                <label for="Email" class="display-4 font-weight-normal">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
                 <div class="input-group">
                   <input type="hidden" name="contact[tags]" value="newsletter">
                   <input type="email"
@@ -76,9 +76,9 @@
       {% endif %}
     </div>
 
-    <div class="grid grid--no-gutters">
+    <div class="row row--no-gutters">
       {% if social_icons %}
-        <div class="grid__item{% if section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+        <div class="col{% if section.settings.footer_newsletter_enable %} col-md-6{% else %} text-center{% endif %}">
           <ul class="list--inline site-footer__social-icons social-icons">
             {% if settings.social_facebook_link != blank %}
               <li>
@@ -156,7 +156,7 @@
         </div>
       {% endif %}
 
-      <div class="grid__item{% if section.settings.footer_newsletter_enable and social_icons == true %} medium-up--one-half{% else %} text-center{% endif %}">
+      <div class="col{% if section.settings.footer_newsletter_enable and social_icons == true %} col-md-6{% else %} text-center{% endif %}">
         <div class="site-footer__copyright{% if social_icons and section.settings.footer_newsletter_enable != blank %} site-footer__copyright--right medium-up--text-right{% elsif social_icons == false and section.settings.footer_newsletter_enable %} medium-up--text-left{% endif %}">
           {% unless social_icons and section.settings.footer_newsletter_enable and section.settings.show_payment_icons %}
             <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}</small>

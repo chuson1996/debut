@@ -1,8 +1,9 @@
 $sm:  576px;
 $md:  768px;
 $lg: 992px;
-$wide:    1440px;
+$wide:    1200px;
 
-$red: #e94a3d;
+$red: '{{ settings.color_button }}';
 $white: #fff;
 $blue: #01447d;
+$green: #2a7370;

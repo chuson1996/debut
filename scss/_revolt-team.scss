@@ -1,0 +1,52 @@
+.revolt-team {
+  .team__title {
+    line-height: 1;
+  }
+  .member {
+    margin-bottom: 1rem;
+    min-height: 5rem;
+
+    .member__name {
+      margin-bottom: 0;
+      font-size: 1.5em;
+      line-height: 1.8rem;
+    }
+    .member__nickname {
+      font-size: 1.1em;
+      color: $green;
+    }
+    .member__nickname, .member__role {
+      margin-bottom: 0;
+    }
+  }
+
+  .ribbon {
+    position: absolute;
+    opacity: 0.9;
+
+    width: 30%;
+    @include mq($from: $md) {
+      width: 15%;
+    }
+
+    &.ribbon--blue {
+      bottom: 0;
+      right: 0;
+      transform: translate(25%, 25%);
+    }
+
+    &.ribbon--red {
+      top: 0;
+      left: 0;
+      transform: translate(-25%, -25%);
+    }
+  }
+
+  .underlayer-image {
+    position: absolute;
+    z-index: -1;
+    top: -10%;
+    height: 90%;
+    transform: translate(-50%, 0);
+  }
+}

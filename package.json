@@ -6,11 +6,22 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "fs-extra": "^4.0.2",
-    "node-watch": "^0.5.5"
+    "node-watch": "^0.5.5",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.8.1"
+  },
   "scripts": {
-    "start": "concurrently \"node index.js\" \"theme watch\" \"sass --sourcemap=none --watch scss/my-theme.scss:assets/my-theme.scss.liquid\"",
+    "start": "concurrently -c white.dim,green,magenta,blue \"node index.js\" \"theme watch\" \"sass --sourcemap=none --watch scss/my-theme.scss:assets/my-theme.scss.liquid\" \"webpack --watch\" ",
+    "build": "sass --sourcemap=none scss/my-theme.scss:assets/my-theme.scss.liquid && webpack && theme upload",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

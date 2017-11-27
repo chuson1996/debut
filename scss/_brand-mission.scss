@@ -27,9 +27,17 @@ $brand-mission-container-vertical-padding: 3rem;
 
     @include mq($from: $md) {
       top: $brand-mission-container-vertical-padding;
-      left: 5vw;
+      left: calc((100vw - 720px) / 4 + 7.5px);
       width: 0.5rem;
       height: calc(100% - #{$brand-mission-container-vertical-padding * 2});
+    }
+
+    @include mq($from: $lg) {
+      left: calc((100vw - 960px) / 4 + 7.5px);
+    }
+
+    @include mq($from: $wide) {
+      left: calc((100vw - 1140px) / 4 + 7.5px);
     }
   }
 }

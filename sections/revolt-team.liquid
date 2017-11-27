@@ -1,0 +1,95 @@
+<div class="revolt-team container">
+  <div class="row mb-4">
+    <div class="position-relative">
+      <img class="ribbon ribbon--blue" src="{{ 'blue-ribbon.png' | asset_url }}" alt="blue-ribbon">
+      <img class="ribbon ribbon--red" src="{{ 'red-ribbon.png' | asset_url }}" alt="red-ribbon">
+      {{ section.settings.underlayer_image | img_url: '1024x' | img_tag:'Underlayer Image', 'underlayer-image d-none d-sm-block' }}
+      {{ section.settings.team_image | img_url: '2048x' | img_tag }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2 d-none d-md-block">
+      <p class="display-4 font-weight-normal team__title">Let's meet our team</p>
+    </div>
+    <div class="col-12 col-md-10 pl-md-5 px-4 px-md-3">
+      <div class="row">
+        <div class="col-6 col-md-12 mb-md-4">
+          <div class="row">
+            {% for block in section.blocks %}
+              {% if block.type == "member" %}
+                <div class="member col-12 col-md-4">
+                  <p class="member__name">{{ block.settings.name }}</p>
+                  <p class="member__nickname">{{ block.settings.nickname }}</p>
+                  <p class="member__role">{{ block.settings.role }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="col-6 col-md-12">
+          <div class="row">
+            {% for block in section.blocks %}
+              {% if block.type == "advisor" %}
+                <div class="member col-12 col-md-4">
+                  <p class="member__name">{{ block.settings.name }}</p>
+                  <p class="member__nickname">{{ block.settings.nickname }}</p>
+                  <p class="member__role">{{ block.settings.role }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Revolt Team",
+    "class": "index-section index-section--flush",
+    "settings": [{
+      "type": "image_picker",
+      "id": "team_image",
+      "label": "Team Image"
+    }, {
+      "type": "image_picker",
+      "id": "underlayer_image",
+      "label": "Underlayer Image"
+    }],
+    "blocks": [{
+      "type": "member",
+      "name": "Member",
+      "settings": [{
+        "type": "text",
+        "id": "name",
+        "label": "Name"
+      }, {
+        "type": "text",
+        "id": "nickname",
+        "label": "Nickname"
+      }, {
+        "type": "text",
+        "id": "role",
+        "label": "Role"
+      }]
+    }, {
+      "type": "advisor",
+      "name": "Advisor",
+      "settings": [{
+        "type": "text",
+        "id": "name",
+        "label": "Name"
+      }, {
+        "type": "text",
+        "id": "nickname",
+        "label": "Nickname"
+      }, {
+        "type": "text",
+        "id": "role",
+        "label": "Role"
+      }]
+    }]
+  }
+{% endschema %}

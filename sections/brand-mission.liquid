@@ -1,7 +1,10 @@
 <div class="brand-mission">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-12 mb-4 mb-md-0 col-md-5">
+        {{ section.settings.image | img_url: '760x' | img_tag }}
+      </div>
+      <div class="col-12 col-md-7">
         {{ section.settings.brand_description }}
       </div>
     </div>
@@ -13,6 +16,7 @@
 {% schema %}
 {
   "name": "Brand Mission",
+  "class": "index-section index-section--flush",
   "settings": [{
     "type": "image_picker",
     "id": "image",

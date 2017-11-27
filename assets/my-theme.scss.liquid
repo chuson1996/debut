@@ -21,9 +21,15 @@
     @media (min-width: 48em) {
       .brand-mission::before {
         top: 3rem;
-        left: 5vw;
+        left: calc((100vw - 720px) / 4 + 7.5px);
         width: 0.5rem;
         height: calc(100% - 6rem); } }
+    @media (min-width: 62em) {
+      .brand-mission::before {
+        left: calc((100vw - 960px) / 4 + 7.5px); } }
+    @media (min-width: 75em) {
+      .brand-mission::before {
+        left: calc((100vw - 1140px) / 4 + 7.5px); } }
 
 .hero__inner p {
   color: #fff;
@@ -66,7 +72,7 @@
   font-size: 1rem;
   border-radius: 2.5rem;
   text-align: center;
-  background-color: #e94a3d;
+  background-color: "{{ settings.color_button }}";
   padding: 0.2rem;
   color: #fff;
   font-weight: 700;
@@ -86,3 +92,39 @@
   .pre-order-cta:hover {
     text-decoration: none;
     color: #fff; }
+
+.revolt-team .team__title {
+  line-height: 1; }
+.revolt-team .member {
+  margin-bottom: 1rem;
+  min-height: 5rem; }
+  .revolt-team .member .member__name {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    line-height: 1.8rem; }
+  .revolt-team .member .member__nickname {
+    font-size: 1.1em;
+    color: #2a7370; }
+  .revolt-team .member .member__nickname, .revolt-team .member .member__role {
+    margin-bottom: 0; }
+.revolt-team .ribbon {
+  position: absolute;
+  opacity: 0.9;
+  width: 30%; }
+  @media (min-width: 48em) {
+    .revolt-team .ribbon {
+      width: 15%; } }
+  .revolt-team .ribbon.ribbon--blue {
+    bottom: 0;
+    right: 0;
+    transform: translate(25%, 25%); }
+  .revolt-team .ribbon.ribbon--red {
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%); }
+.revolt-team .underlayer-image {
+  position: absolute;
+  z-index: -1;
+  top: -10%;
+  height: 90%;
+  transform: translate(-50%, 0); }
