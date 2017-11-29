@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import OutOfStockModal from './OutOfStockModal/OutOfStockModal';
 
 function getProps(dom) {
   const props = {};
@@ -34,4 +35,9 @@ function App2(props) {
 const dom2 = document.querySelector('.some-weird-button2');
 if (dom2) {
   render(<App2/>, document.querySelector('.some-weird-button2'));
+}
+
+const preorderSubmitCheckoutDom = document.querySelector('#preorder-submit-checkout');
+if (preorderSubmitCheckoutDom) {
+  render(<OutOfStockModal {...getProps(preorderSubmitCheckoutDom)}/>, preorderSubmitCheckoutDom)
 }

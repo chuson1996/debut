@@ -133,17 +133,11 @@
             <div class="cart__shipping">{{ 'cart.general.shipping_at_checkout' | t }}</div>
             <a href="collections/all" class="btn btn--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
             <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
-            {% if section.settings.checkout_disable %}
-              <span id="preorder-submit-checkout">
-                {% include 'setComponentProps', name:"checkout", value:"{{'cart.general.checkout' | t}}" %}
-                <input type="button" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
-              </span>
-            {% else %}
-              <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
-              {% if additional_checkout_buttons %}
-                <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
-              {% endif %}
+            <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
+            {% if additional_checkout_buttons %}
+              <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
             {% endif %}
+            <h1>Custom</h1>
           </div>
         </div>
       </footer>
@@ -169,24 +163,6 @@
         "id": "cart_notes_enable",
         "label": "Enable cart notes",
         "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "checkout_disable",
-        "label": "Disable Checkout (For Validation)",
-        "default": false
-      },
-      {
-        "type": "text",
-        "id": "modal_heading",
-        "label": "Modal Heading",
-        "default": "Modal Heading"
-      },
-      {
-        "type": "richtext",
-        "id": "modal_body",
-        "label": "Modal Body",
-        "default": "<p>Some good stuff in here</p>"
       }
     ]
   }

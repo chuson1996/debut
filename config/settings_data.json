@@ -31,7 +31,7 @@
     "social_snapchat_link": "",
     "social_youtube_link": "",
     "social_vimeo_link": "",
-    "favicon": "",
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -136,6 +136,7 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "background_image": "shopify:\/\/shop_images\/footer-background.jpg",
           "footer_linklist": "footer",
           "footer_linklist_two": "",
           "footer_newsletter_enable": true,

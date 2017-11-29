@@ -1,0 +1,10 @@
+.footer {
+  background-size: cover;
+}
+
+.site-footer__newsletter {
+  margin: 50px auto 50px;
+  @include mq($from: 750px) {
+    margin: 55px 0 55px;
+  }
+}

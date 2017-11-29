@@ -2,7 +2,7 @@
 assets/ajax-loader.gif:
   development: 2017-11-15T10:45:56+02:00   deca8b0ecd6974227d157b6d7068995d
 assets/app.bundle.js:
-  development: 2017-11-25T14:05:17+02:00   426b2edf8b34fe2569e285ba016e0df3
+  development: 2017-11-28T23:00:40+02:00   78f0f9fc615a80f4dd0412037aa5f989
 assets/blue-ribbon.png:
   development: 2017-11-25T13:36:06+02:00   006ee94041b74298c4cc0e137f251fde
 assets/brand-mission.css.liquid:
@@ -24,7 +24,7 @@ assets/logo-black.svg:
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/my-theme.scss.liquid:
-  development: 2017-11-26T08:01:05+02:00   6e1d5d382adb53b4319996f99dcb075c
+  development: 2017-11-28T23:03:21+02:00   534f1d2dabfd4912b6ccd9b2a0a9a26b
 assets/my-theme.scss.liquid.map:
   development: 2017-11-22T23:01:19+02:00   f954b5ce6e5ee20f809583b6325f34f6
 assets/password.js:
@@ -42,7 +42,7 @@ assets/theme.scss.liquid:
 assets/vendor.js:
   development: 2017-11-15T10:45:57+02:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
-  development: 2017-11-26T07:48:48+02:00   db3772d4fa5279cf8c5dce91344bbc2e
+  development: 2017-11-28T21:47:23+02:00   92541bc655a1a57467d6f4f13207f57d
 config/settings_schema.json:
   development: 2017-11-25T23:43:04+02:00   074b5b81d588d56af1140e65a962579b
 layout/gift_card.liquid:
@@ -73,8 +73,10 @@ sections/blog-template.liquid:
   development: 2017-11-15T10:45:54+02:00   5757170836346c1082ffba4ef408857e
 sections/brand-mission.liquid:
   development: 2017-11-25T23:46:50+02:00   91a36b7c4da1b1f9716ea54181730f0a
+sections/cart-pre-order-template.liquid:
+  development: 2017-11-28T22:05:57+02:00   0bb4bcdf1aa5cbabfbe08f076411bc00
 sections/cart-template.liquid:
-  development: 2017-11-15T10:45:54+02:00   f07185af88ed866aaf60d6567f794269
+  development: 2017-11-28T23:06:38+02:00   7434c74f3784253daedf697bb25130b9
 sections/collection-list.liquid:
   development: 2017-11-15T10:45:54+02:00   a55d61b95ff71917adad276c41ee1dc0
 sections/collection-template.liquid:
@@ -92,7 +94,7 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2017-11-15T10:45:54+02:00   9c2cd13b0e7e12c4468426c6119eb30e
 sections/footer.liquid:
-  development: 2017-11-26T09:35:56+02:00   70eb00c968f9e44ea034c058ccab7f9b
+  development: 2017-11-28T14:14:09+02:00   f9cade22c315e7aec76fb50f1f8e30c3
 sections/header.liquid:
   development: 2017-11-15T10:45:55+02:00   bbef6b2a58734e1b7b67c6c3ce076185
 sections/hero.liquid:
@@ -263,6 +265,8 @@ templates/blog.liquid:
   development: 2017-11-15T10:46:00+02:00   2d9763b480fe6879080163b1e0e33e54
 templates/cart.liquid:
   development: 2017-11-15T10:46:00+02:00   714b4b7c62d583b231f339bbd1b85d03
+templates/cart.pre-order.liquid:
+  development: 2017-11-28T22:04:47+02:00   b3e2de9829578713eff0af08ee0a6a67
 templates/collection.liquid:
   development: 2017-11-15T10:46:00+02:00   5db0256874fca1cc72a6f068888fe095
 templates/customers/account.liquid:
