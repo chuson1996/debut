@@ -9,27 +9,6 @@
   @media (min-width: 48em) {
     .brand-mission {
       padding-bottom: 3rem; } }
-  .brand-mission::before {
-    content: '';
-    position: absolute;
-    background-color: #fff;
-    bottom: 2rem;
-    width: 60%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 0.5rem; }
-    @media (min-width: 48em) {
-      .brand-mission::before {
-        top: 3rem;
-        left: calc((100vw - 720px) / 4 + 7.5px);
-        width: 0.5rem;
-        height: calc(100% - 6rem); } }
-    @media (min-width: 62em) {
-      .brand-mission::before {
-        left: calc((100vw - 960px) / 4 + 7.5px); } }
-    @media (min-width: 75em) {
-      .brand-mission::before {
-        left: calc((100vw - 1140px) / 4 + 7.5px); } }
 
 .hero__inner p {
   color: #fff;
@@ -56,11 +35,13 @@
       display: flex;
       justify-content: flex-end; }
       .hero__body .hero__content-container .hero__content {
+        max-width: 300px;
         display: flex;
         flex-direction: column; } }
 
 .hero__featured_product_image {
   width: 100%;
+  pointer-events: none;
   transform: scale(2) translate(25%, -15%); }
   @media (min-width: 36em) {
     .hero__featured_product_image {
@@ -139,9 +120,35 @@
       margin: 55px 0 55px; } }
 
 .out-of-stock-modal {
-  left: 30%;
   position: absolute;
-  top: 30%;
   background-color: whitesmoke;
-  padding: 15px;
-  right: 30%; }
+  background-size: cover;
+  box-shadow: -3px 7px 7px 0px #0000003b;
+  padding: 2rem;
+  color: #fff;
+  left: 3rem;
+  right: 3rem;
+  top: -100vh;
+  transition: top .3s; }
+  .out-of-stock-modal p {
+    color: #fff; }
+  @media (min-width: 36em) {
+    .out-of-stock-modal {
+      left: 30%;
+      top: 15%;
+      right: 30%; } }
+  .out-of-stock-modal__close-button {
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+    width: 4rem;
+    transition: transform .3s; }
+    .out-of-stock-modal__close-button:hover {
+      transform: translate(50%, -50%) rotate(180deg); }
+  .out-of-stock-modal--after-open {
+    top: 3rem; }
+  .out-of-stock-modal--before-close {
+    top: -100vh; }

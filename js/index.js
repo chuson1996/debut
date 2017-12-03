@@ -10,34 +10,16 @@ function getProps(dom) {
   return props;
 }
 
-function App({ line1, line2 }) {
-  return (
-    <button onClick={() => alert('work!')}>
-      {line1}:{line2}
-    </button>
-  );
-}
-
-const dom = document.querySelector('.some-weird-button');
-if (dom) {
-  render(<App {...getProps(dom)}/>, document.querySelector('.some-weird-button'));
-}
-
-
-function App2(props) {
-  return (
-    <button onClick={() => alert('work2!')}>
-      abc432
-    </button>
-  );
-}
-
-const dom2 = document.querySelector('.some-weird-button2');
-if (dom2) {
-  render(<App2/>, document.querySelector('.some-weird-button2'));
+function getChildrenHTML(dom) {
+  return dom.querySelector('.d-none.hidden-children').innerHTML;
 }
 
 const preorderSubmitCheckoutDom = document.querySelector('#preorder-submit-checkout');
 if (preorderSubmitCheckoutDom) {
-  render(<OutOfStockModal {...getProps(preorderSubmitCheckoutDom)}/>, preorderSubmitCheckoutDom)
+  render(
+    <OutOfStockModal
+      {...getProps(preorderSubmitCheckoutDom)}
+      childrenHTML={getChildrenHTML(preorderSubmitCheckoutDom)}
+    />,
+    preorderSubmitCheckoutDom)
 }

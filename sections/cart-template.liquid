@@ -135,7 +135,39 @@
             <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
             {% if section.settings.checkout_disable %}
               <span id="preorder-submit-checkout">
-                {% include 'setComponentProps', name:"checkout", value:"{{'cart.general.checkout' | t}}" %}
+                <div class="d-none hidden-children">
+                  {% form 'customer' %}
+                    {{ form.errors | default_errors }}
+                    {% if form.posted_successfully? %}
+                      <p class="form--success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+                    {% else %}
+                      <div class="input-group">
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input type="email"
+                          name="contact[email]"
+                          id="Email"
+                          class="input-group__field newsletter__input"
+                          value="{% if customer %}{{ customer.email }}{% endif %}"
+                          placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+                          autocorrect="off"
+                          autocapitalize="off">
+                        <span class="input-group__btn">
+                          <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                            <span class="newsletter__submit-text--large">{{ 'general.newsletter_form.submit' | t }}</span>
+                          </button>
+                        </span>
+                      </div>
+                    {% endif %}
+                  {% endform %}
+                </div>
+                {% assign checkoutStr = 'cart.general.checkout' | t %}
+                {% include 'setComponentProps', name: "checkout", value: checkoutStr %}
+                {% include 'setComponentProps', name: "modalHeading", value: section.settings.modal_heading %}
+                {% include 'setComponentProps', name: "modalBody", value: section.settings.modal_body %}
+                {% assign closeSvgSrc = 'close.svg' | asset_url %}
+                {% include 'setComponentProps', name: "closeSvgSrc", value: closeSvgSrc %}
+                {% assign modalBackgroundSrc = section.settings.modal_background | img_url:'576x' %}
+                {% include 'setComponentProps', name: "modalBackgroundSrc", value: modalBackgroundSrc %}
                 <input type="button" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
               </span>
             {% else %}
@@ -175,6 +207,11 @@
         "id": "checkout_disable",
         "label": "Disable Checkout (For Validation)",
         "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "modal_background",
+        "label": "Modal Background"
       },
       {
         "type": "text",

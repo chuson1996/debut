@@ -1,8 +1,46 @@
 .out-of-stock-modal {
-  left: 30%;
   position: absolute;
-  top: 30%;
   background-color: whitesmoke;
-  padding: 15px;
-  right: 30%;
+  background-size: cover;
+  box-shadow: -3px 7px 7px 0px #0000003b;
+  padding: 2rem;
+
+  color: $white;
+  p {
+    color: $white;
+  }
+
+  left: 3rem;
+  right: 3rem;
+  top: -100vh;
+
+  transition: top .3s;
+
+  @include mq($from: $sm) {
+    left: 30%;
+    top: 15%;
+    right: 30%;
+  }
+
+  &__close-button {
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    cursor: pointer;
+    width: 4rem;
+    &:hover {
+      transform: translate(50%, -50%) rotate(180deg);
+    }
+    transition: transform .3s;
+  }
+
+  &--after-open {
+    top: 3rem;
+  }
+
+  &--before-close {
+    top: -100vh;
+  }
 }

@@ -2,13 +2,15 @@
 assets/ajax-loader.gif:
   development: 2017-11-15T10:45:56+02:00   deca8b0ecd6974227d157b6d7068995d
 assets/app.bundle.js:
-  development: 2017-11-28T23:00:40+02:00   78f0f9fc615a80f4dd0412037aa5f989
+  development: 2017-11-29T23:29:21+02:00   837fd27a8f8c28814a6fbd34f85b7e63
 assets/blue-ribbon.png:
   development: 2017-11-25T13:36:06+02:00   006ee94041b74298c4cc0e137f251fde
 assets/brand-mission.css.liquid:
   development: 2017-11-22T22:57:10+02:00   9e73c8bbc9b303191463bc0f6d00e5f1
 assets/brand-mission.css.liquid.map:
   development: 2017-11-22T22:57:09+02:00   02861a83d312c27e26ac0ead794556a3
+assets/close.svg:
+  development: 2017-11-29T20:25:25+02:00   a9e0b867870ab95ee7cfbef2aa93277c
 assets/gift-card.js:
   development: 2017-11-15T10:45:56+02:00   c73df2ee57cc9eb577f7a1858063495d
 assets/gift-card.scss.liquid:
@@ -24,7 +26,7 @@ assets/logo-black.svg:
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/my-theme.scss.liquid:
-  development: 2017-11-28T23:03:21+02:00   534f1d2dabfd4912b6ccd9b2a0a9a26b
+  development: 2017-11-30T00:21:49+02:00   7658e64673e7df9d84bac899f413f5be
 assets/my-theme.scss.liquid.map:
   development: 2017-11-22T23:01:19+02:00   f954b5ce6e5ee20f809583b6325f34f6
 assets/password.js:
@@ -72,11 +74,11 @@ sections/article-template.liquid:
 sections/blog-template.liquid:
   development: 2017-11-15T10:45:54+02:00   5757170836346c1082ffba4ef408857e
 sections/brand-mission.liquid:
-  development: 2017-11-25T23:46:50+02:00   91a36b7c4da1b1f9716ea54181730f0a
+  development: 2017-11-30T22:08:23+02:00   038562516994e400324aeeec1f625107
 sections/cart-pre-order-template.liquid:
   development: 2017-11-28T22:05:57+02:00   0bb4bcdf1aa5cbabfbe08f076411bc00
 sections/cart-template.liquid:
-  development: 2017-11-28T23:06:38+02:00   7434c74f3784253daedf697bb25130b9
+  development: 2017-11-30T22:25:51+02:00   f51fdbf5202c31a4d06a0fb3f4fcf175
 sections/collection-list.liquid:
   development: 2017-11-15T10:45:54+02:00   a55d61b95ff71917adad276c41ee1dc0
 sections/collection-template.liquid:

@@ -14,30 +14,30 @@ $brand-mission-container-vertical-padding: 3rem;
     padding-bottom: $brand-mission-container-vertical-padding;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: $white;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   background-color: $white;
 
-    bottom: 2rem;
-    width: 60%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 0.5rem;
+  //   bottom: 2rem;
+  //   width: 60%;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  //   height: 0.5rem;
 
-    @include mq($from: $md) {
-      top: $brand-mission-container-vertical-padding;
-      left: calc((100vw - 720px) / 4 + 7.5px);
-      width: 0.5rem;
-      height: calc(100% - #{$brand-mission-container-vertical-padding * 2});
-    }
+  //   @include mq($from: $md) {
+  //     top: $brand-mission-container-vertical-padding;
+  //     left: calc((100vw - 720px) / 4 + 7.5px);
+  //     width: 0.5rem;
+  //     height: calc(100% - #{$brand-mission-container-vertical-padding * 2});
+  //   }
 
-    @include mq($from: $lg) {
-      left: calc((100vw - 960px) / 4 + 7.5px);
-    }
+  //   @include mq($from: $lg) {
+  //     left: calc((100vw - 960px) / 4 + 7.5px);
+  //   }
 
-    @include mq($from: $wide) {
-      left: calc((100vw - 1140px) / 4 + 7.5px);
-    }
-  }
+  //   @include mq($from: $wide) {
+  //     left: calc((100vw - 1140px) / 4 + 7.5px);
+  //   }
+  // }
 }

@@ -19,7 +19,7 @@ export default class OutOfStockModal extends React.Component {
 
   render() {
     const { isOpen } = this.state;
-    const { checkout } = this.props;
+    const { checkout, modalHeading, modalBody, closeSvgSrc, childrenHTML, modalBackgroundSrc } = this.props;
     return (
       <span>
         <input onClick={this.open.bind(this)} type="button" name="checkout" className="btn btn--small-wide" value={checkout}/>
@@ -29,13 +29,21 @@ export default class OutOfStockModal extends React.Component {
             afterOpen: 'out-of-stock-modal--after-open',
             beforeClose: 'out-of-stock-modal--before-close',
           }}
+          style={{
+            content: {
+              backgroundImage: `url('${modalBackgroundSrc}')`
+            }
+          }}
           isOpen={isOpen}
           onAfterOpen={this.open.bind(this)}
           onRequestClose={this.close.bind(this)}
           contentLabel="We're sorry!"
+          closeTimeoutMS={300}
         >
-          <h1>Modal Content</h1>
-          <p>Etc.</p>
+          <img onClick={this.close.bind(this)} className="out-of-stock-modal__close-button" src={closeSvgSrc} alt="close"/>
+          <h1>{modalHeading}</h1>
+          <div dangerouslySetInnerHTML={{ __html: modalBody }}/>
+          <div dangerouslySetInnerHTML={{ __html: childrenHTML }}></div>
         </Modal>
       </span>
     );

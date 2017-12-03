@@ -26,6 +26,7 @@
       justify-content: flex-end;
 
       .hero__content {
+        max-width: 300px;
         display: flex;
         flex-direction: column;
       }
@@ -35,6 +36,7 @@
 
 .hero__featured_product_image {
   width: 100%;
+  pointer-events: none;
   transform: scale(2) translate(25%, -15%);
   @include mq($from: $sm) {
     max-width: 500px;
