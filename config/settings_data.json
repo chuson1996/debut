@@ -24,7 +24,7 @@
     "share_twitter": true,
     "share_pinterest": true,
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/revoltsneakers",
     "social_pinterest_link": "",
     "social_instagram_link": "",
     "social_tumblr_link": "",
@@ -66,9 +66,9 @@
         "type": "hero",
         "settings": {
           "image": "shopify:\/\/shop_images\/hero_background-laptop.jpg",
-          "featured_product_image": "shopify:\/\/shop_images\/Wow_Right_Shoe_Outer.png",
+          "featured_product_image": "shopify:\/\/shop_images\/Wow_Right_Shoe_Outer_7699d543-ad4c-4398-a6db-ec529c663edf.png",
           "featured_product_image_size": 1000,
-          "text": "Revolt is the world first sneakers for millennial from recycled materials.",
+          "text": "The world's dopest sneakers made from recycled materials",
           "hero_size": "medium",
           "text_size": "medium",
           "button_link": "shopify:\/\/collections\/all"
@@ -146,8 +146,8 @@
       "brand-mission": {
         "type": "brand-mission",
         "settings": {
-          "image": "shopify:\/\/shop_images\/womens-athletic-leggings.jpg",
-          "brand_description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae risus pulvinar, faucibus est vitae, vestibulum lacus. Nam sapien nibh, rutrum quis aliquam ut, tempor vel tellus. Mauris egestas, tellus accumsan commodo viverra, mauris nisl volutpat augue, a placerat arcu neque non enim. Phasellus molestie venenatis posuere. Vivamus hendrerit nisi non urna hendrerit, a feugiat lacus commodo. Ut egestas pharetra elit ut eleifend. Integer nec quam diam.<\/p>\n<p>Quisque bibendum pulvinar augue sed vehicula. Cras in augue mi. Duis commodo tortor ac massa posuere venenatis. Sed elementum molestie massa ut finibus. Aliquam vel fermentum dui, sit amet tincidunt ex. Curabitur in posuere sapien, in consequat ipsum. Suspendisse lacinia sollicitudin tortor, eget gravida elit dictum b.<\/p>"
+          "image": "shopify:\/\/shop_images\/fre-sonneveld-17585.jpg",
+          "brand_description": "<p>From the coldest and darkest corner on Earth, HEL(sinki), Revolt was born to do the exact opposite, brightening our life with arts and creativity one sneaker at a time. With Revolt, we&rsquo;re building a new world where no ideas are too crazy to try, no boundaries are too far to cross, and no challenges are too hard to accept. Be bold, be brave and don&rsquo;t listen to anyone because in this new world nobody knows anything!<\/p>\n<p>Revolt is the world&rsquo;s first artist-designed sneaker brand made from recycled materials. We use the finest recycled fibers and latest footwear technologies to provide all of us the dopest, most comfortable and durable shoes ever created. God forbid! Our sneakers are so lit we&rsquo;ll be damned!<\/p>\n<p>It&rsquo;s about time! Come join the Revolt movement and let&rsquo;s rock the world together.&nbsp;<\/p>"
         }
       },
       "revolt-team": {
@@ -219,6 +219,39 @@
         "type": "product-template",
         "settings": {
           "image_size": "large",
+          "show_quantity_selector": false,
+          "show_variant_labels": true,
+          "show_vendor": false,
+          "enable_zoom": true,
+          "show_share_buttons": true
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": false,
+          "checkout_disable": false,
+          "modal_background": "shopify:\/\/shop_images\/artist_background-01.jpg",
+          "modal_heading": "Hey chill!",
+          "modal_body": "<p>The&nbsp;sneakers are not yet available. Can't wait to have your hands\/feet on them? Subscribe to our mailing list NOW to be the first in the world to own&nbsp;a pair of Revolt.<\/p>"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": "4",
+          "rows": "2",
+          "show_collection_image": true,
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "product-pre-order-template": {
+        "type": "product-pre-order-template",
+        "settings": {
+          "image_size": "medium",
           "show_quantity_selector": false,
           "show_variant_labels": true,
           "show_vendor": false,

@@ -26,7 +26,7 @@ assets/logo-black.svg:
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/my-theme.scss.liquid:
-  development: 2017-11-30T00:21:49+02:00   7658e64673e7df9d84bac899f413f5be
+  development: 2017-12-03T20:41:17+02:00   5a6f6dbe83c79e729032a312f8abde8f
 assets/my-theme.scss.liquid.map:
   development: 2017-11-22T23:01:19+02:00   f954b5ce6e5ee20f809583b6325f34f6
 assets/password.js:
@@ -44,7 +44,7 @@ assets/theme.scss.liquid:
 assets/vendor.js:
   development: 2017-11-15T10:45:57+02:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
-  development: 2017-11-28T21:47:23+02:00   92541bc655a1a57467d6f4f13207f57d
+  development: 2017-12-08T21:57:14+02:00   26a5efd825215f47e98b9725a7105f2a
 config/settings_schema.json:
   development: 2017-11-25T23:43:04+02:00   074b5b81d588d56af1140e65a962579b
 layout/gift_card.liquid:
@@ -117,6 +117,8 @@ sections/password-footer.liquid:
   development: 2017-11-15T10:45:55+02:00   0c543736abf1ace6be7207be17195203
 sections/password-header.liquid:
   development: 2017-11-15T10:45:55+02:00   96c731183fa1c3f2f87ca66501494897
+sections/product-pre-order-template.liquid:
+  development: 2017-12-08T21:54:44+02:00   cf89427ecea1dd87b4fe1eda2e0ba1a1
 sections/product-template.liquid:
   development: 2017-11-15T10:45:55+02:00   af76dab7f716f8f212581eb9e25bad4a
 sections/quotes.liquid:
@@ -244,7 +246,7 @@ snippets/pagination.liquid:
 snippets/pre-order-cta.liquid:
   development: 2017-11-25T11:54:15+02:00   c631d4583c73818bd6848cc9694e235f
 snippets/product-card-grid.liquid:
-  development: 2017-11-15T10:45:59+02:00   4688cc4ff89f19be4a58919fb7a3a8fe
+  development: 2017-12-03T20:40:18+02:00   76b0c2b707495918358e12449aa61983
 snippets/product-card-list.liquid:
   development: 2017-11-15T10:45:59+02:00   701fa6db04bd9c70283028cc4274fc2f
 snippets/product-price.liquid:
@@ -299,5 +301,7 @@ templates/password.liquid:
   development: 2017-11-15T10:46:00+02:00   30d1743d26765ce8c3fa53a3fdf9524f
 templates/product.liquid:
   development: 2017-11-15T10:46:00+02:00   104c9411752892755502b61349a31329
+templates/product.pre-order.liquid:
+  development: 2017-12-08T21:50:49+02:00   28aba9e4cad635fe7490be38e421136c
 templates/search.liquid:
   development: 2017-11-15T10:46:00+02:00   6e8bfd01622f992bf20c908bfb83337d

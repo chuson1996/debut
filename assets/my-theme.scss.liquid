@@ -152,3 +152,14 @@
     top: 3rem; }
   .out-of-stock-modal--before-close {
     top: -100vh; }
+
+.product .product-image, .product .product-image--behind {
+  transition: opacity .3s; }
+.product .product-image {
+  opacity: 1; }
+.product .product-image--behind {
+  opacity: 0; }
+.product:hover .product-image {
+  opacity: 0; }
+.product:hover .product-image--behind {
+  opacity: 1; }

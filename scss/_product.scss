@@ -1,0 +1,21 @@
+.product {
+  .product-image, .product-image--behind {
+    transition: opacity .3s;
+  }
+  .product-image {
+    opacity: 1;
+  }
+  .product-image--behind {
+    opacity: 0;
+  }
+
+  &:hover {
+    .product-image {
+      opacity: 0;
+    }
+    .product-image--behind {
+      opacity: 1;
+    }
+  }
+}
+
