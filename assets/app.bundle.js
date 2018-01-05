@@ -18577,7 +18577,7 @@ var OutOfStockModal = function (_React$Component) {
       return _react2.default.createElement(
         'span',
         null,
-        _react2.default.createElement('input', { onClick: this.open.bind(this), type: 'button', name: 'checkout', className: 'btn btn--small-wide', value: checkout }),
+        _react2.default.createElement('input', { onClick: this.open.bind(this), type: 'button', name: 'checkout', className: 'button button--small-wide', value: checkout }),
         _react2.default.createElement(
           _reactModal2.default,
           {

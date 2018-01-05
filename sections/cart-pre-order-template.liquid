@@ -68,7 +68,7 @@
                 {% endif %}
 
                 <p class="small--hide">
-                  <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--secondary cart__remove">{{ 'cart.general.remove' | t }}</a>
+                  <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="button button--small button--secondary cart__remove">{{ 'cart.general.remove' | t }}</a>
                 </p>
               </td>
               <td class="cart__price-wrapper cart-flex-item">
@@ -79,19 +79,19 @@
                 {% endfor %}
 
                 <div class="cart__edit medium-up--hide">
-                  <button type="button" class="btn btn--secondary btn--small js-edit-toggle cart__edit--active" data-target="line{{ forloop.index }}">
+                  <button type="button" class="button button--secondary button--small js-edit-toggle cart__edit--active" data-target="line{{ forloop.index }}">
                     <span class="cart__edit-text--edit">{{ 'cart.general.edit' | t }}</span>
                     <span class="cart__edit-text--cancel">{{ 'cart.general.cancel' | t }}</span>
                   </button>
                 </div>
               </td>
               <td class="cart__update-wrapper cart-flex-item text-right">
-                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--secondary cart__remove medium-up--hide">{{ 'cart.general.remove' | t }}</a>
+                <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="button button--small button--secondary cart__remove medium-up--hide">{{ 'cart.general.remove' | t }}</a>
                 <div class="cart__qty">
                   <label for="updates_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>
                   <input class="cart__qty-input" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" pattern="[0-9]*">
                 </div>
-                <input type="submit" name="update" class="btn btn--small cart__update medium-up--hide" value="{{ 'cart.general.update' | t }}">
+                <input type="submit" name="update" class="button button--small cart__update medium-up--hide" value="{{ 'cart.general.update' | t }}">
               </td>
               <td class="text-right small--hide">
                 {% if item.original_line_price != item.line_price %}
@@ -131,9 +131,9 @@
               </div>
             {% endif %}
             <div class="cart__shipping">{{ 'cart.general.shipping_at_checkout' | t }}</div>
-            <a href="collections/all" class="btn btn--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
-            <input type="submit" name="update" class="btn btn--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
-            <input type="submit" name="checkout" class="btn btn--small-wide" value="{{ 'cart.general.checkout' | t }}">
+            <a href="collections/all" class="button button--secondary cart__update cart__continue--large small--hide" >{{ 'cart.general.continue_shopping' | t }}</a>
+            <input type="submit" name="update" class="button button--secondary cart__update cart__update--large small--hide" value="{{ 'cart.general.update' | t }}">
+            <input type="submit" name="checkout" class="button button--small-wide" value="{{ 'cart.general.checkout' | t }}">
             {% if additional_checkout_buttons %}
               <div class="additional-checkout-buttons">{{ content_for_additional_checkout_buttons }}</div>
             {% endif %}
@@ -149,7 +149,7 @@
       <div class="cookie-message">
         <p>{{ 'cart.general.cookies_required' | t }}</p>
       </div>
-      <a href="/" class="btn btn--has-icon-after cart__continue-btn">{{ 'general.404.link' | t }}{% include 'icon-arrow-right' %}</a>
+      <a href="/" class="button button--has-icon-after cart__continue-btn">{{ 'general.404.link' | t }}{% include 'icon-arrow-right' %}</a>
     </div>
   {% endif %}
 </div>

@@ -25,7 +25,7 @@
               {% for order in customer.orders %}
                 <tr>
                   <td data-label="{{ 'customer.orders.order_number' | t }}">
-                    <a href="{{ order.customer_url }}" class="btn btn--secondary btn--small">{{ order.name }}</a>
+                    <a href="{{ order.customer_url }}" class="button button--secondary button--small">{{ order.name }}</a>
                   </td>
                   <td data-label="{{ 'customer.orders.date' | t }}">{{ order.created_at | date: format: 'month_day_year' }}</td>
                   <td data-label="{{ 'customer.orders.payment_status' | t }}">{{ order.financial_status_label }}</td>
@@ -51,7 +51,7 @@
 
       {{ customer.default_address | format_address }}
 
-      <p><a href="/account/addresses" class="btn btn--small">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+      <p><a href="/account/addresses" class="button button--small">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
     </div>
   </div>
 </div>

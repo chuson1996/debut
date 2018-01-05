@@ -8,6 +8,8 @@
   <meta name="theme-color" content="{{ settings.color_button }}">
   <link rel="canonical" href="{{ canonical_url }}">
 
+  <meta name="google-site-verification" content="csnwIjHUCl1DXUq9XswgJbGku0q3JCMAoI6qfpD94gM" />
+
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
   {% endif %}
@@ -32,7 +34,6 @@
 
   {% include 'social-meta-tags' %}
 
-  {{ 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' | stylesheet_tag }}
   {{ '//cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.0/balancetext.min.js' | script_tag }}
   <script>
     balanceText();
@@ -43,9 +44,12 @@
       text-wrap: balance;  /* Apply (proposed) CSS style */
     }
   </style>
+  {{ 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
   {{ 'my-theme.scss.css' | asset_url | stylesheet_tag }}
   {% include 'google-fonts' %}
+
+  <script async src="https://www.trycelery.com/js/celery.js"></script>
 
   <script>
     var theme = {
@@ -97,7 +101,7 @@
     <div class="search-bar__table">
       <div class="search-bar__table-cell search-bar__form-wrapper">
         <form class="search search-bar__form" action="/search" method="get" role="search">
-          <button class="search-bar__submit search__submit btn--link" type="submit">
+          <button class="search-bar__submit search__submit button--link" type="submit">
             {% include 'icon-search' %}
             <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
           </button>
@@ -105,7 +109,7 @@
         </form>
       </div>
       <div class="search-bar__table-cell text-right">
-        <button type="button" class="btn--link search-bar__close js-drawer-close">
+        <button type="button" class="button--link search-bar__close js-drawer-close">
           {% include 'icon-close' %}
           <span class="icon__fallback-text">{{ 'general.search.close' | t }}</span>
         </button>

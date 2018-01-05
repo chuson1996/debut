@@ -31,7 +31,7 @@
 
         <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
           {% if linklists[child_list_handle].links != blank %}
-            <button type="button" class="btn--link js-toggle-submenu mobile-nav__link" data-target="{{ child_list_handle }}-{{ outerLoopIndex }}" data-level="1">
+            <button type="button" class="button--link js-toggle-submenu mobile-nav__link" data-target="{{ child_list_handle }}-{{ outerLoopIndex }}" data-level="1">
               {{ link.title }}
               <div class="mobile-nav__icon">
                 {% include 'icon-chevron-right' %}
@@ -42,7 +42,7 @@
               <li class="mobile-nav__item border-bottom">
                 <div class="mobile-nav__table">
                   <div class="mobile-nav__table-cell mobile-nav__return">
-                    <button class="btn--link js-toggle-submenu mobile-nav__return-btn" type="button">
+                    <button class="button--link js-toggle-submenu mobile-nav__return-btn" type="button">
                       {% include 'icon-chevron-left' %}
                       <span class="icon__fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
                     </button>
@@ -58,7 +58,7 @@
 
                 <li class="mobile-nav__item{% unless forloop.last %} border-bottom{% endunless %}">
                   {% if linklists[grand_child_list_handle].links != blank %}
-                    <button type="button" class="btn--link js-toggle-submenu mobile-nav__link mobile-nav__sublist-link" data-target="{{ grand_child_list_handle }}-{{ outerLoopIndex }}-{{ forloop.index }}">
+                    <button type="button" class="button--link js-toggle-submenu mobile-nav__link mobile-nav__sublist-link" data-target="{{ grand_child_list_handle }}-{{ outerLoopIndex }}-{{ forloop.index }}">
                       {{ childlink.title }}
                       <div class="mobile-nav__icon">
                         {% include 'icon-chevron-right' %}
@@ -69,7 +69,7 @@
                       <li class="mobile-nav__item border-bottom">
                         <div class="mobile-nav__table">
                           <div class="mobile-nav__table-cell mobile-nav__return">
-                            <button type="button" class="btn--link js-toggle-submenu mobile-nav__return-btn" data-target="{{ child_list_handle }}-{{ outerLoopIndex }}">
+                            <button type="button" class="button--link js-toggle-submenu mobile-nav__return-btn" data-target="{{ child_list_handle }}-{{ outerLoopIndex }}">
                               {% include 'icon-chevron-left' %}
                               <span class="icon__fallback-text">{{ 'layout.navigation.collapse' | t }}</span>
                             </button>
@@ -217,7 +217,7 @@
             </div>
           {% endif %}
 
-          <button type="button" class="btn--link site-header__search-toggle js-drawer-open-top medium-up--hide">
+          <button type="button" class="button--link site-header__search-toggle js-drawer-open-top medium-up--hide">
             {% include 'icon-search' %}
             <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
           </button>
@@ -249,7 +249,7 @@
           </a>
 
           {% unless linklists[section.settings.main_linklist] == blank %}
-            <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+            <button type="button" class="button--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
               {% include 'icon-hamburger' %}
               {% include 'icon-close' %}
               <span class="icon__fallback-text">{{ 'layout.navigation.toggle' | t }}</span>

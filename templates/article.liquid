@@ -126,7 +126,7 @@
               <p class="fine-print">{{ 'blogs.comments.moderated' | t }}</p>
             {% endif %}
 
-            <input type="submit" class="btn" value="{{ 'blogs.comments.post' | t }}">
+            <input type="submit" class="button" value="{{ 'blogs.comments.post' | t }}">
           {% endform %}
         </div>
       </div>
@@ -135,7 +135,7 @@
 {% endif %}
 
 <div class="text-center return-link-wrapper">
-  <a href="{{ blog.url }}" class="btn btn--secondary btn--has-icon-before return-link">
+  <a href="{{ blog.url }}" class="button button--secondary button--has-icon-before return-link">
     {% include 'icon-arrow-left' %}
     {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
   </a>

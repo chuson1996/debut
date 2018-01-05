@@ -1617,7 +1617,7 @@ ol {
     }
   }
 
-  a:not(.btn) {
+  a:not(.button) {
     border-bottom: 1px solid currentColor;
     padding-bottom: 1px;
   }
@@ -1657,7 +1657,7 @@ a {
 }
 
 /*================ Buttons ================*/
-.btn {
+.button {
   @include user-select();
   @include prefix(appearance, none, webkit moz spec);
   display: inline-block;
@@ -1700,13 +1700,13 @@ a {
   }
 }
 
-.btn--secondary {
+.button--secondary {
   background-color: $color-small-button;
   color: $color-small-button-text;
   border-color: $color-border;
 }
 
-.btn--small {
+.button--small {
   font-family: $font-stack-body;
   padding: 8px 10px;
   font-size: em(12);
@@ -1715,13 +1715,13 @@ a {
 
 /*================ Button variations ================*/
 @include media-query($small) {
-  .btn--small-wide {
+  .button--small-wide {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
-.btn--link {
+.button--link {
   background-color: transparent;
   border: 0;
   margin: 0;
@@ -1738,12 +1738,12 @@ a {
   }
 }
 
-.btn--narrow {
+.button--narrow {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.btn--disabled {
+.button--disabled {
   opacity: 0.5;
   cursor: default;
 
@@ -1753,13 +1753,13 @@ a {
   }
 }
 
-.btn--has-icon-after {
+.button--has-icon-after {
   .icon {
     margin-left: 10px;
   }
 }
 
-.btn--has-icon-before {
+.button--has-icon-before {
   .icon {
     margin-right: 10px;
   }
@@ -1781,7 +1781,7 @@ a {
   @include media-query($small) {
     margin-bottom: (-$section-spacing) - 1; // same as .site-footer
 
-    .btn {
+    .button {
       display: block;
     }
   }
@@ -2112,7 +2112,7 @@ textarea {
   }
 
   [type="submit"],
-  .btn {
+  .button {
     display: inline-block;
     width: auto;
   }
@@ -2179,7 +2179,7 @@ textarea {
 }
 
 .input-group__field,
-.input-group__btn .btn {
+.input-group__btn .button {
   height: $input-group-height-small;
   padding-top: 0;
   padding-bottom: 0;
@@ -2203,7 +2203,7 @@ textarea {
   white-space: nowrap;
   width: 1%;
 
-  .btn {
+  .button {
     border-radius: 0 $border-radius $border-radius 0;
     white-space: nowrap;
   }
@@ -3699,7 +3699,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 @include media-query($small) {
   .site-header__icons {
-    .btn--link,
+    .button--link,
     .site-header__cart {
       font-size: em($font-size-base);
     }
@@ -4038,7 +4038,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   }
 }
 
-.btn--share {
+.button--share {
   margin-right: 5px;
   margin-bottom: 10px;
 
@@ -4138,7 +4138,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   The search submit button has pointer-events: none which also
   effects the :hover style. This forces the style to be applied.
 ==============================================================================*/
-.search-header__input:hover + .btn--link {
+.search-header__input:hover + .button--link {
   opacity: $opacity-link-hover;
 }
 

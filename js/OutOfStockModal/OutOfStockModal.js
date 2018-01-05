@@ -22,7 +22,7 @@ export default class OutOfStockModal extends React.Component {
     const { checkout, modalHeading, modalBody, closeSvgSrc, childrenHTML, modalBackgroundSrc } = this.props;
     return (
       <span>
-        <input onClick={this.open.bind(this)} type="button" name="checkout" className="btn btn--small-wide" value={checkout}/>
+        <input onClick={this.open.bind(this)} type="button" name="checkout" className="button button--small-wide" value={checkout}/>
         <Modal
           className={{
             base: 'out-of-stock-modal',

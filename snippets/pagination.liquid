@@ -1,12 +1,12 @@
 <ul class="list--inline pagination">
   <li>
     {% unless paginate.previous.is_link %}
-      <div class="btn btn--secondary btn--narrow btn--disabled">
+      <div class="button button--secondary button--narrow button--disabled">
         {% include 'icon-arrow-left' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
       </div>
     {% else %}
-      <a href="{{ paginate.previous.url }}" class="btn btn--secondary btn--narrow">
+      <a href="{{ paginate.previous.url }}" class="button button--secondary button--narrow">
         {% include 'icon-arrow-left' %}
         <span class="icon__fallback-text">{{ 'general.pagination.previous' | t }}</span>
       </a>
@@ -17,12 +17,12 @@
   </li>
   <li>
     {% unless paginate.next.is_link %}
-      <div class="btn btn--secondary btn--narrow btn--disabled">
+      <div class="button button--secondary button--narrow button--disabled">
         {% include 'icon-arrow-right' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
       </div>
     {% else %}
-      <a href="{{ paginate.next.url }}" class="btn btn--secondary btn--narrow">
+      <a href="{{ paginate.next.url }}" class="button button--secondary button--narrow">
         {% include 'icon-arrow-right' %}
         <span class="icon__fallback-text">{{ 'general.pagination.next' | t }}</span>
       </a>

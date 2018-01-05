@@ -87,7 +87,7 @@
 
         <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} thumbnails-slider--active{% endif %}">
           {% if enable_thumbnail_slides == true %}
-            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}">
+            <button type="button" class="button button--link medium-up--hide thumbnails-slider__btn thumbnails-slider__prev thumbnails-slider__prev--{{ section.id }}">
               {% include 'icon-chevron-left' %}
               <span class="icon__fallback-text">{{ 'sections.slideshow.previous_slide' | t }}</span>
             </button>
@@ -105,7 +105,7 @@
             {% endfor %}
           </ul>
           {% if enable_thumbnail_slides == true %}
-            <button type="button" class="btn btn--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}">
+            <button type="button" class="button button--link medium-up--hide thumbnails-slider__btn thumbnails-slider__next thumbnails-slider__next--{{ section.id }}">
               {% include 'icon-chevron-right' %}
               <span class="icon__fallback-text">{{ 'sections.slideshow.next_slide' | t }}</span>
             </button>
@@ -206,7 +206,7 @@
             {% endif %}
 
             <div class="product-form__item product-form__item--submit">
-              <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="btn product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
+              <button type="submit" name="add" id="AddToCart-{{ section.id }}" {% unless current_variant.available %}disabled="disabled"{% endunless %} class="button product-form__cart-submit{% if product.options.size == 1 and product.variants[0].title == 'Default Title' %} product-form__cart-submit--small{% endif %}">
                 <span id="AddToCartText-{{ section.id }}">
                   {% unless current_variant.available %}
                     {{ 'products.product.sold_out' | t }}

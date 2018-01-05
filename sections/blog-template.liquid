@@ -80,14 +80,14 @@
 
               <ul class="list--inline">
                 <li>
-                  <a href="{{ article.url }}" class="btn btn--secondary btn--small">
+                  <a href="{{ article.url }}" class="button button--secondary button--small">
                     {{ 'blogs.article.read_more' | t }}
                   </a>
                 </li>
 
                 {% if blog.comments_enabled? and article.comments_count > 0 %}
                   <li>
-                    <a href="{{ article.url }}#comments" class="btn btn--small btn--link">
+                    <a href="{{ article.url }}#comments" class="button button--small button--link">
                       {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
                     </a>
                   </li>
@@ -165,7 +165,7 @@
                 <ul class="list--inline article__meta-buttons">
                   {% if article.excerpt.size > 0 %}
                     <li>
-                      <a href="{{ article.url }}" class="btn btn--secondary btn--small">
+                      <a href="{{ article.url }}" class="button button--secondary button--small">
                         {{ 'blogs.article.read_more' | t }}
                       </a>
                     </li>
@@ -173,7 +173,7 @@
 
                   {% if blog.comments_enabled? and article.comments_count == 0 %}
                     <li>
-                      <a href="{{ article.url }}#comment_form" class="btn btn--secondary btn--small">
+                      <a href="{{ article.url }}#comment_form" class="button button--secondary button--small">
                         {{ 'blogs.comments.title' | t }}
                       </a>
                     </li>
@@ -181,7 +181,7 @@
 
                   {% if blog.comments_enabled? and article.comments_count > 0 %}
                     <li>
-                      <a href="{{ article.url }}#comments" class="btn btn--secondary btn--small">
+                      <a href="{{ article.url }}#comments" class="button button--secondary button--small">
                         {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
                       </a>
                     </li>
