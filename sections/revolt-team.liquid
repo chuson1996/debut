@@ -22,6 +22,7 @@
                   <p class="member__name">{{ block.settings.name }}</p>
                   <p class="member__nickname">{{ block.settings.nickname }}</p>
                   <p class="member__role">{{ block.settings.role }}</p>
+                  <a href="mailto:{{ block.settings.email }}" class="member__email">{{ block.settings.email }}</a>
                 </div>
               {% endif %}
             {% endfor %}
@@ -73,6 +74,10 @@
         "type": "text",
         "id": "role",
         "label": "Role"
+      }, {
+        "type": "text",
+        "id": "email",
+        "label": "Email"
       }]
     }, {
       "type": "advisor",

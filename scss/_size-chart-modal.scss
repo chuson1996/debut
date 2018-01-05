@@ -1,0 +1,46 @@
+.gl-table-container {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.gl-table table td.label {
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.gl-table-fixed-col {
+  white-space: nowrap;
+  background-color: #fff;
+  border-right: 3px solid #000;
+  width: auto;
+}
+
+.gl-table-container-scrollable {
+  flex: 100% 1 1;
+  overflow-x: scroll;
+}
+
+.gl-table table {
+  border-collapse: collapse;
+  td {
+    min-width: 102px;
+  }
+}
+
+.gl-table table td .content {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

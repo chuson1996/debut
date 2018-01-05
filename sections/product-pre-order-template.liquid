@@ -138,6 +138,8 @@
             {% endif %}
           </p>
 
+          <div id="sizeChartModal"></div>
+
           <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-form product-form-{{ section.id }}{% unless section.settings.show_variant_labels %} product-form--hide-variant-labels{% endunless %}" data-section="{{ section.id }}">
             {% if section.settings.use_trycelery %}
               <div class="product-form__item product-form__item--submit">
@@ -199,9 +201,11 @@
 
         </div>
 
-        <div class="product-single__description rte" itemprop="description">
-          {{ product.description }}
-        </div>
+        {% if section.settings.show_description %}
+          <div class="product-single__description rte" itemprop="description">
+            {{ productDescription }}
+          </div>
+        {% endif %}
 
         {% for productTag in product.tags %}
           {% if productTag contains "mc>" %}
@@ -276,6 +280,12 @@
         "id": "show_quantity_selector",
         "label": "Show quantity selector",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_description",
+        "label": "Show Description",
+        "default": true
       },
       {
         "type": "checkbox",

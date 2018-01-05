@@ -2,7 +2,7 @@
 assets/ajax-loader.gif:
   development: 2017-11-15T10:45:56+02:00   deca8b0ecd6974227d157b6d7068995d
 assets/app.bundle.js:
-  development: 2018-01-05T14:49:41+02:00   2c8e10fcbd55615cb44828bda2059702
+  development: 2018-01-05T16:52:53+02:00   ebb4aca97a130c755b34cc64840d7a81
 assets/blue-ribbon.png:
   development: 2017-11-25T13:36:06+02:00   006ee94041b74298c4cc0e137f251fde
 assets/brand-mission.css.liquid:
@@ -26,7 +26,7 @@ assets/logo-black.svg:
 assets/match-media.min.js:
   development: 2017-11-15T10:45:56+02:00   d0bf06c458a236dcca39b3be8cf80ec5
 assets/my-theme.scss.liquid:
-  development: 2017-12-03T20:41:17+02:00   5a6f6dbe83c79e729032a312f8abde8f
+  development: 2018-01-05T16:32:06+02:00   bf0df23c3e436680fca3ef75e07a72d9
 assets/my-theme.scss.liquid.map:
   development: 2017-11-22T23:01:19+02:00   f954b5ce6e5ee20f809583b6325f34f6
 assets/password.js:
@@ -40,7 +40,7 @@ assets/revolt-vertical.svg:
 assets/theme.js:
   development: 2017-11-15T10:45:56+02:00   b762f5a064c773b56dfce88c09349089
 assets/theme.scss.liquid:
-  development: 2018-01-05T14:44:51+02:00   9d2d782a0a16cd90fa811296d32a3b4a
+  development: 2018-01-05T16:26:51+02:00   a6a5272d8ceaf2184818987068b38536
 assets/vendor.js:
   development: 2017-11-15T10:45:57+02:00   cb7c4217c9b6feb844647b361accfe6c
 config/settings_data.json:
@@ -96,7 +96,7 @@ sections/featured-blog.liquid:
 sections/featured-product.liquid:
   development: 2018-01-05T14:50:00+02:00   de0f32771fbab548b078866cf26079d7
 sections/footer.liquid:
-  development: 2018-01-05T14:49:59+02:00   e7d57b36453bd12a15afb76ab115270a
+  development: 2018-01-05T16:35:47+02:00   812c535882d48a0fa8e5a41b4faf3706
 sections/header.liquid:
   development: 2018-01-05T14:48:11+02:00   5857484abb3672fdb582af9fee12ad0d
 sections/hero.liquid:
@@ -118,13 +118,13 @@ sections/password-footer.liquid:
 sections/password-header.liquid:
   development: 2017-11-15T10:45:55+02:00   96c731183fa1c3f2f87ca66501494897
 sections/product-pre-order-template.liquid:
-  development: 2018-01-05T15:02:03+02:00   3f69fb776a091cb0264c516540b7ab46
+  development: 2018-01-05T16:48:59+02:00   5f1307ad419b8519a05b65f6c1ce69ce
 sections/product-template.liquid:
   development: 2018-01-05T14:49:56+02:00   2b1caeb157f3ff50117c2001c3be6af9
 sections/quotes.liquid:
   development: 2017-11-15T23:50:12+02:00   b234ffff9a061befe87a0d69a121af1c
 sections/revolt-team.liquid:
-  development: 2017-11-25T23:48:46+02:00   65f5f9c2b0f2ce0cd18ccc00ffd2583e
+  development: 2018-01-05T17:06:33+02:00   279d4162578cd1eb25643f274269b736
 sections/rich-text.liquid:
   development: 2017-11-15T10:45:55+02:00   d25fb0e1575242ba565b129eff3dd1b8
 sections/slideshow.liquid:

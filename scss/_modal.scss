@@ -1,0 +1,5 @@
+.modal-dialog {
+  @include mq($from: $sm) {
+    max-width: 570px;
+  }
+}
